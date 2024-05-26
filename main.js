@@ -10,6 +10,8 @@ const initTodoList = () => {
         let key = localStorage.key(i);
         let taskValue = JSON.parse(localStorage.getItem(key));
 
+        if (key == 'dark') return;
+
         const newTodo = document.createElement('div');
         newTodo.classList.add('todo-item');
 
@@ -17,9 +19,7 @@ const initTodoList = () => {
             
             <div class="item-content">
                 <button class="btn_completed"></button>
-                <span class="task">${
-                    taskValue == 0 ? (taskValue = null) : taskValue
-                }</span>
+                <span class="task">${taskValue}</span>
             </div>
 
             <img class="btn_delete" src="./img/trash-2.svg" alt="delete task" />
