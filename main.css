@@ -27,7 +27,7 @@ hr {
 }
 
 .wrapper {
-    width: 480px;
+    max-width: 480px;
     background-color: var(--rgba-bg);
     padding: 2rem;
     margin: 1rem;
@@ -140,4 +140,12 @@ hr {
     cursor: pointer;
     width: 20px;
     height: 20px;
+}
+
+/* For mobile version */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .wrapper {
+        width: 90%;
+        padding: 2rem 1rem;
+    }
 }
