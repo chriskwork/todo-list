@@ -31,7 +31,7 @@ hr {
 }
 
 .wrapper {
-    max-width: 480px;
+    width: 480px;
     background-color: var(--rgba-bg);
     padding: 2rem;
     margin: 1rem;
