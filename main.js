@@ -7,8 +7,8 @@ addButton.addEventListener('click', addTaskFromButton);
 
 const initTodoList = () => {
     for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        const taskValue = JSON.parse(localStorage.getItem(key));
+        let key = localStorage.key(i);
+        let taskValue = JSON.parse(localStorage.getItem(key));
 
         const newTodo = document.createElement('div');
         newTodo.classList.add('todo-item');
@@ -18,7 +18,7 @@ const initTodoList = () => {
             <div class="item-content">
                 <button class="btn_completed"></button>
                 <span class="task">${
-                    taskValue === 0 ? (taskValue = '') : taskValue
+                    taskValue == 0 ? (taskValue = '') : taskValue
                 }</span>
             </div>
 
