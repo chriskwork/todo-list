@@ -1,0 +1,143 @@
+:root {
+    --text-color: #fff;
+    --rgba-bg: rgba(255, 255, 255, 0.15);
+    --rgba-bg-2: rgba(255, 255, 255, 0.5);
+    --clr-main: rgb(252, 157, 69);
+    --border-radius: 8px;
+    --transition: 250ms;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(81, 69, 252, 1), rgb(20, 8, 184));
+
+    margin-top: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    border-color: var(--rgba-bg);
+}
+
+.wrapper {
+    width: 480px;
+    background-color: var(--rgba-bg);
+    padding: 2rem;
+    margin: 1rem;
+    border: 1px solid var(--rgba-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 16px 8px var(--rgba-bg);
+}
+
+.wrapper h1 {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.wrapper h4 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+/* Add input form */
+
+.wrapper #inputField {
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+}
+
+.wrapper #inputField input[type='text'] {
+    padding: 0.7rem;
+    border: none;
+    border-radius: var(--border-radius);
+    width: 100%;
+    margin-right: 0.5rem;
+}
+
+.wrapper #inputField input[type='text']::placeholder {
+    color: #c4c4c4;
+}
+
+/* To do list contents */
+
+.wrapper #inputField button[type='submit'] {
+    cursor: pointer;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 4px 8px;
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: var(--clr-main);
+}
+
+.wrapper #todo {
+    display: flex;
+}
+
+.wrapper #todo .todo-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    border-radius: var(--border-radius);
+}
+
+.wrapper #todo .todo-items .todo-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+}
+
+.wrapper #todo .item-content {
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+}
+
+.wrapper #todo .btn_completed {
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.wrapper #todo .btn_completed:hover {
+    background-color: var(--clr-main);
+}
+
+.wrapper #todo .btn_completed.checked {
+    background-color: var(--clr-main);
+}
+
+.wrapper #todo .task {
+    color: #fff;
+    font-weight: 600;
+}
+
+.wrapper #todo .task.task_done {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    color: #c4c4c4;
+}
+
+/* Delete button */
+
+.wrapper #todo .btn_delete {
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
