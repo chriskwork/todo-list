@@ -148,4 +148,12 @@ hr {
         width: 90%;
         padding: 2rem 1rem;
     }
+
+    .wrapper #inputField input[type='text'] {
+        font-size: 1.2rem;
+    }
+
+    .wrapper #inputField button[type='submit'] {
+        padding: 4px 16px;
+    }
 }
