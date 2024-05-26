@@ -17,7 +17,9 @@ const initTodoList = () => {
             
             <div class="item-content">
                 <button class="btn_completed"></button>
-                <span class="task">${taskValue}</span>
+                <span class="task">${
+                    taskValue === 0 ? (taskValue = '') : taskValue
+                }</span>
             </div>
 
             <img class="btn_delete" src="./img/trash-2.svg" alt="delete task" />
