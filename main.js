@@ -18,7 +18,7 @@ const initTodoList = () => {
             <div class="item-content">
                 <button class="btn_completed"></button>
                 <span class="task">${
-                    taskValue == 0 ? (taskValue = '') : taskValue
+                    taskValue == 0 ? (taskValue = null) : taskValue
                 }</span>
             </div>
 
