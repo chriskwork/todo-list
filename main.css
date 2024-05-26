@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+html {
+    font-family: 'DM Sans', sans-serif;
+}
+
 body {
     background: linear-gradient(90deg, rgba(81, 69, 252, 1), rgb(20, 8, 184));
 
@@ -39,6 +43,7 @@ hr {
 .wrapper h1 {
     color: var(--text-color);
     margin-bottom: 2rem;
+    font-weight: 600;
 }
 
 .wrapper h4 {
@@ -151,6 +156,10 @@ hr {
 
     .wrapper #inputField input[type='text'] {
         font-size: 1.2rem;
+    }
+
+    .wrapper #inputField input[type='text']::placeholder {
+        font-size: 1rem;
     }
 
     .wrapper #inputField button[type='submit'] {
