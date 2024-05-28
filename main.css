@@ -19,9 +19,10 @@ html {
 body {
     background: linear-gradient(90deg, rgba(81, 69, 252, 1), rgb(20, 8, 184));
 
-    margin-top: 3rem;
+    margin-top: 1rem;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -34,7 +35,7 @@ hr {
     width: 480px;
     background-color: var(--rgba-bg);
     padding: 2rem;
-    margin: 1rem;
+    margin: 1rem 1rem 0;
     border: 1px solid var(--rgba-bg);
     border-radius: var(--border-radius);
     box-shadow: 0 0 16px 8px var(--rgba-bg);
@@ -150,7 +151,7 @@ hr {
 /* For mobile version */
 @media screen and (max-width: 768px) and (orientation: portrait) {
     .wrapper {
-        width: 90%;
+        width: 85%;
         padding: 2rem 1rem;
     }
 
@@ -165,4 +166,29 @@ hr {
     .wrapper #inputField button[type='submit'] {
         padding: 4px 16px;
     }
+}
+
+/* Digital clock part */
+#clock p {
+    color: var(--clr-main);
+}
+
+#clock .date {
+    color: #c4c4c4;
+    margin-left: 1rem;
+    font-size: 0.85rem;
+}
+
+#clock .hours {
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.wrapper.clock h4 {
+    margin-bottom: 1.5rem;
+}
+
+#clock .time-main {
+    margin-bottom: 0.5rem;
 }
